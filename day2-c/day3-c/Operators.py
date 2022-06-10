@@ -73,4 +73,13 @@ else:
     # A 1 is always the remainder whenever an odd integer is divided by 2.
     # Write a computer program that asks the user to enter an integer (odd or even) and have it report whether the integer entered is odd. 
     # You are required to implement this program using the modulus operator and an if ... Selection construct.
+
+num= int(input("Enter digit:"))
+
+if num%2!=0:
+     print("odd number")
+elif num%2==0:
+    print("even number")     
+else:
+     print("Invalid")    
   
