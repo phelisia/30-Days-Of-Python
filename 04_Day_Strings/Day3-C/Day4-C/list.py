@@ -251,9 +251,10 @@ print(f)
 #Slice out the middle IT company or companies from the list
 l=companies[3:6]
 print(l)
-# #Remove the first IT company from the list
-# companies.pop(1)
-# print(companies)
+#Remove the first IT company from the list
+t='sharon'
+companies.pop(1)
+print(companies)
 
 # #Remove the middle IT company or companies from the list
 # companies.pop(5)
