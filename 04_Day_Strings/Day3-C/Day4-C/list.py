@@ -1,4 +1,6 @@
 from itertools import count
+from operator import index
+from tracemalloc import start
 
 
 fruits = ['banana', 'orange', 'mango', 'lemon']                     # list of fruits
@@ -270,11 +272,98 @@ print(companies)
 # #Destroy the IT companies list
 companies=['Fb','Google','Microsoft','Apple','IBM','Oracle', 'Amazon']
 print(companies)
-companies.pop[3:-3]
+# companies.pop[3:-3]
 print(companies)
 new_list = []
 new_list.append(companies)
 print(new_list)
+
+#length of a list
+fruits = ['banana', 'orange', 'mango', 'lemon']  
+vegetables = ['Tomato', 'Potato', 'Cabbage','Onion', 'Carrot']      
+animal_products = ['milk', 'meat', 'butter', 'yoghurt']  
+print ("the length of a list is:", len(fruits))
+print("the length of vegetable list is:", len(vegetables))
+print(" the length of animal_products is:",len(animal_products))
+# print(fruits.index())
+
+
+#How to index a whole list
+# lst = ['Asabeneh', 250, True, {'country':'Finland', 'city':'Helsinki'}]
+#unpacking the list
+fruits = ['banana', 'orange', 'mango', 'lemon','lime','apple']
+
+print(*fruits)     # banana
+    # mango
+# print(*rest)   
+
+
+#Indexing accessing parts of list,strings and tuples
+fruits = ['banana', 'orange', 'mango', 'lemon']
+all_fruits = fruits[0:4] # it returns all the fruits
+# this will also give the same result as the one above
+all_fruits = fruits[:-3] # if we don't set where to stop it takes all the rest
+orange_and_mango = fruits[1:3] # it does not include the first index
+orange_mango_lemon = fruits[1:]
+orange_and_lemon = fruits[::2]
+print(all_fruits)
+
+
+#modifying list
+a=['mango','apple','orange']
+a[2]='kiwi'
+print(a)
+a.extend(['you','me','i','where'])
+print(a)
+last=len(a)-1
+a[last]='lime'
+print(a)
+y='mango' in a
+print(y)
+# def nam(list):
+#     nam.append('you')
+#     print(nam)
+# nam(['read']) 
+  #a function that takes arguments of list then append it 
+# def list(g):
+#     v=len(g)
+#     g.append("lime")
+#     print(list)
+# list(['anota','siara','lubembe'])   
+aList = [4, 8, 12, 16]
+aList[1:4] = [20, 24, 28]
+print(aList)
+
+sampleList = [10, 20, 30, 40, 50]
+sampleList.pop()
+print(sampleList)
+
+sampleList.pop(2)
+print(sampleList)
+sampleList = [10, 20, 30, 40, 50]
+print(sampleList[-2])
+print(sampleList[-4:-1])
+aList = [1, 2, 3, 4, 5, 6, 7]
+pow2 =  [2 * x for x in aList]
+print(pow2)
+
+l = [None] * 10
+print(len(l))
+
+#Write a program in Python to display a below-given pattern.
+n = int(input("Enter number: "))
+for i in range(n):
+    for j in range(i):
+        print(i, end=" ")
+        print("\n")
+        
+        
+ #Range function program to return multiple of 7 within a given range 1,30.
+ n=(range(1,30))   
+   
+
+
+
 
 
 
